@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Annotation Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header style="background-color: lightblue; font-size: 24px; font-weight: bold; text-align: left; padding: 10px;">Screenplay Addressee Annotation Tool</header>
+
+
+<!-- File Upload Section -->
+<div>
+    <input type="file" id="file-input" accept=".txt">
+    <button onclick="uploadFile()">Import Screenplay</button>
+    <button onclick="exportText()">Export Screenplay</button>
+
+</div>
+
+<div id="text-container"></div>
+
+<div id="entity-selection" style="display:none;">
+    <form id="entity-form"></form>
+    <button onclick="annotateText()" id="annotate-btn">Add Annotation</button>
+    <button onclick="clearAnnotation()" id="clear-btn">Clear Annotation</button>
+    <button onclick="addAddresseeManually()">Create New Addressee</button>
+    <div id="entity-box-spacer"></div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
